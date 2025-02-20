@@ -10,7 +10,7 @@ The request now targets the multimedia section of the site by using https://www.
 
 Instead of looking for an `<a>` tag with the `frontpage-link` class, it now looks for one with the `medium-link` class using `soup.find("a", class_="medium-link")`.
 
-This modification allows the scraper to extract the text content from the first multimedia link element it finds on the multimedia page.
+These modifications allow the scraper to extract the text content from the first multimedia link element it finds on the multimedia page.
 
 ## Schedule Explanation
 The original cron expression "0 20 * * *" means the job will run every day at 8:00 PM (20:00), because "0" indicates the 0th minute and "20" the 20th hour of the day, with wildcards for the day, month, and weekday.
