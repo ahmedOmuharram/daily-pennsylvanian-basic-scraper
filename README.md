@@ -1,7 +1,7 @@
 # Basic Git Scraper
 Made for CIS 3500 at the University of Pennsylvania
 
-## Modifications made to the template
+## Modifications to The Template
 - **URL Change:**
 
 The request now targets the multimedia section of the site by using https://www.thedp.com/multimedia.
