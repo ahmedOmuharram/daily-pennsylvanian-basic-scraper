@@ -1,7 +1,18 @@
-# Basic Git Scraper Template
+# Basic Git Scraper
+Made for CIS 3500 at the University of Pennsylvania
 
-This template provides a starting point for **git scraping**—the technique of scraping data from websites and automatically committing it to a Git repository using workflows, [coined by Simon Willison](https://simonwillison.net/2020/Oct/9/git-scraping/).
+## Modifications made to the template
+- **URL Change:**
 
+The request now targets the multimedia section of the site by using https://www.thedp.com/multimedia.
+
+- **Search Rule Update:**
+
+Instead of looking for an `<a>` tag with the `frontpage-link` class, it now looks for one with the `medium-link` class using `soup.find("a", class_="medium-link")`.
+
+This modification allows the scraper to extract the text content from the first multimedia link element it finds on the multimedia page.
+
+## Template README
 Git scraping helps create an audit trail capturing snapshots of data over time. It leverages Git's version control and a continuous integration's scheduling capabilities to regularly scrape sites and save data without needing to manage servers.
 
 The key benefit is automating web scrapers to run on a schedule with little overhead. The scraped data gets stored incrementally so you can review historical changes. This helps enable use-cases like price monitoring, content updates tracking, research datasets building, and more. The ability to have these resources for virtually free, enables the use of this technique for a wide range of projects.
