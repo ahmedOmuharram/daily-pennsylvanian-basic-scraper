@@ -13,9 +13,9 @@ Instead of looking for an `<a>` tag with the `frontpage-link` class, it now look
 These modifications allow the scraper to extract the text content from the first multimedia link element it finds on the multimedia page.
 
 ## Schedule Explanation
-The original cron expression "0 20 * * *" means the job will run every day at 8:00 PM (20:00), because "0" indicates the 0th minute and "20" the 20th hour of the day, with wildcards for the day, month, and weekday.
+The original cron expression "`0 20 * * *`" means the job will run every day at 8:00 PM (20:00), because "0" indicates the 0th minute and "20" the 20th hour of the day, with wildcards for the day, month, and weekday.
 
-The updated cron expression "0 5,17 * * *" means that the job will run every day at the start of the 5th and 17th hour—i.e., at 5:00 AM and 5:00 PM—regardless of the day, month, or weekday.
+The updated cron expression "`0 5,17 * * *`" means that the job will run every day at the start of the 5th and 17th hour—i.e., at 5:00 AM and 5:00 PM—regardless of the day, month, or weekday.
 
 ## Template README
 Git scraping helps create an audit trail capturing snapshots of data over time. It leverages Git's version control and a continuous integration's scheduling capabilities to regularly scrape sites and save data without needing to manage servers.
