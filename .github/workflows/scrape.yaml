@@ -30,7 +30,7 @@ jobs:
 
       - name: 📦 Install pipenv
         run: |
-          python -m pip install --upgrade pipenv wheel requests pytz bs4
+          python -m pip install --upgrade pipenv wheel requests pytz bs4 loguru
 
       - name: 🔄 Check pipenv cache before installing dependencies
         id: cache-pipenv
